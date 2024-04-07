@@ -1,7 +1,6 @@
 # Versão 1.0
 # Data: 7 de abril de 2024
-# ISENÇÃO DE RESPONSABILIDADE
-# Este script é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita, incluindo, mas não se limitando a, garantias de comercialização, adequação a um fim específico e não infração. Em nenhum caso os autores ou detentores dos direitos autorais serão responsáveis por qualquer reivindicação, danos ou outra responsabilidade, seja em uma ação de contrato, delito ou de outra forma, decorrente, fora de ou em conexão com o script ou o uso ou outras negociações no script.
+# ISENÇÃO DE RESPONSABILIDADE: Este script é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita, incluindo, mas não se limitando a, garantias de comercialização, adequação a um fim específico e não infração. Em nenhum caso os autores ou detentores dos direitos autorais serão responsáveis por qualquer reivindicação, danos ou outra responsabilidade, seja em uma ação de contrato, delito ou de outra forma, decorrente, fora de ou em conexão com o script ou o uso ou outras negociações no script.
 
 import os
 import openai
