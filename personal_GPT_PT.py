@@ -41,13 +41,13 @@ mensagens = coletar_mensagens()
 nomearquivo = salva_arquivo()
 # Solicita ao usuário para escolher um modelo
 try:
-    modelo = input("Escolha um modelo: gpt-4-turbo-preview ou gpt-4 (padrão gpt-4): ")
+    modelo = input("Escolha um modelo: gpt-4o, gpt-4-turbo, gpt-3.5-turbo (padrão gpt-4o): ")
 except ValueError:
-    modelo = "gpt-4" # Modelo padrão
-# Garante que o modelo seja gpt-4-turbo-preview ou gpt-4
-if modelo not in ["gpt-4-turbo-preview", "gpt-4"]:
-    modelo = "gpt-4"
-    print("Valor de modelo inválido. Definindo para o padrão (gpt-4).")
+    modelo = "gpt-4o" # Modelo padrão
+# Garante que o modelo seja gpt-4o, gpt-4-turbo, ou gpt-3.5-turbo
+if modelo not in ["gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo"]:
+    modelo = "gpt-4o"
+    print("Valor de modelo inválido. Definindo para o padrão (gpt-4o).")
 # Solicita ao usuário para definir a temperatura
 try:
     temperatura = float(input("Defina a temperatura: 0.0 a 2.0 (padrão 0.5): "))
