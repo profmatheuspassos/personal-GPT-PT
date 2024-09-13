@@ -6,7 +6,7 @@ Este script foi projetado para facilitar a interação com os modelos de linguag
 
 - **Interação do Usuário para Coleta de Dados**: Coleta mensagens do usuário especificando o papel da IA, o contexto e tarefas ou perguntas específicas. Essas são estruturadas em um loop onde o usuário pode continuar inserindo mensagens até digitar 'fim'.
 
-- **Configuração de Modelo e Temperatura**: Permite que o usuário escolha entre diferentes modelos da OpenAI (padrão para `gpt-4`) e defina o parâmetro de temperatura (padrão para 0.5), que afeta a aleatoriedade das respostas do modelo.
+- **Configuração de Modelo e Temperatura**: Permite que o usuário escolha entre diferentes modelos da OpenAI (padrão para `gpt-4o`) e defina o parâmetro de temperatura (padrão para 0.5), que afeta a aleatoriedade das respostas do modelo.
 
 - **Geração de Resposta**: Usa as mensagens coletadas como entrada para gerar respostas do modelo OpenAI especificado.
 
@@ -20,7 +20,7 @@ Este script foi projetado para facilitar a interação com os modelos de linguag
    
 2. **Coleta de Entradas**: Insira a instrução inicial para a IA, seguida por uma série de mensagens. Termine de inserir digitando 'fim'.
    
-3. **Seleção de Modelo**: Escolha um modelo da OpenAI. Se um nome de modelo inválido for inserido, ele utiliza o modelo `gpt-4`.
+3. **Seleção de Modelo**: Escolha um modelo da OpenAI. Se um nome de modelo inválido for inserido, ele utiliza o modelo `gpt-4o`.
    
 4. **Configuração de Temperatura**: Defina a temperatura desejada para a geração de resposta do modelo. Ele lida com entradas inválidas definindo a temperatura para o padrão de 0.5.
    
