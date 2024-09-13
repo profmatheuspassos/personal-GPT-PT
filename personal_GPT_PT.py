@@ -2,6 +2,10 @@
 # Data: 7 de abril de 2024
 # ISENÇÃO DE RESPONSABILIDADE: Este script é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita, incluindo, mas não se limitando a, garantias de comercialização, adequação a um fim específico e não infração. Em nenhum caso os autores ou detentores dos direitos autorais serão responsáveis por qualquer reivindicação, danos ou outra responsabilidade, seja em uma ação de contrato, delito ou de outra forma, decorrente, fora de ou em conexão com o script ou o uso ou outras negociações no script.
 
+# Versão 1.1
+# Data: 13 de setembro de 2024
+# Atualizaçâo: alterados os modelos para gpt-4o-mini e gpt-4o
+
 import os
 import openai
 from pathlib import Path
@@ -41,13 +45,13 @@ mensagens = coletar_mensagens()
 nomearquivo = salva_arquivo()
 # Solicita ao usuário para escolher um modelo
 try:
-    modelo = input("Escolha um modelo: gpt-4-turbo-preview ou gpt-4 (padrão gpt-4): ")
+    modelo = input("Escolha um modelo: gpt-4o-mini ou gpt-4o (padrão gpt-4o): ")
 except ValueError:
     modelo = "gpt-4" # Modelo padrão
-# Garante que o modelo seja gpt-4-turbo-preview ou gpt-4
-if modelo not in ["gpt-4-turbo-preview", "gpt-4"]:
-    modelo = "gpt-4"
-    print("Valor de modelo inválido. Definindo para o padrão (gpt-4).")
+# Garante que o modelo seja gpt-4o-mini ou gpt-4o
+if modelo not in ["gpt-4o-mini", "gpt-4o"]:
+    modelo = "gpt-4o"
+    print("Valor de modelo inválido. Definindo para o padrão (gpt-4o).")
 # Solicita ao usuário para definir a temperatura
 try:
     temperatura = float(input("Defina a temperatura: 0.0 a 2.0 (padrão 0.5): "))
